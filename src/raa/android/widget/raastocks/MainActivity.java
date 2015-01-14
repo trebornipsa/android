@@ -47,7 +47,7 @@ public class MainActivity extends AppWidgetProvider
         p.setColor(0xFF00F800);
         canvas.drawArc(new RectF(18, 18, 82, 82), -iAngle/2+100, iAngle+100, false, p);
         
-        m_iAngle++;
+        m_iAngle+=2;
         RemoteViews views = new RemoteViews(m_Context.getPackageName(), R.layout.activity_main);
         views.setImageViewBitmap(R.id.canvas, bitmap);
 
